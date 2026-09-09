@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogify - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">Blogify</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="create-blog.html">Create Blog</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </div>
+
+    </nav>
+
+    <section class="dashboard">
+
+        <div class="dashboard-header">
+
+            <h1>My Dashboard</h1>
+
+            <p>
+                Welcome, <span id="userName">User</span>!
+            </p>
+
+            <p>Manage your blogs here.</p>
+
+            <div class="dashboard-actions">
+                <a href="create-blog.html" class="btn">
+                    + Create Blog
+                </a>
+            </div>
+
+        </div>
+
+        <div id="dashboardBlogs" class="blog-container"></div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

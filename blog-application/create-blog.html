@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogify - Create Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">Blogify</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </div>
+
+    </nav>
+
+    <div class="form-container">
+
+        <h2>Create New Blog</h2>
+
+        <form id="blogForm">
+
+            <div class="form-group">
+                <label>Blog Title</label>
+
+                <input
+                    type="text"
+                    id="blogTitle"
+                    placeholder="Enter blog title"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+
+                <label>Author</label>
+
+                <input
+                    type="text"
+                    id="blogAuthor"
+                    placeholder="Enter your name"
+                    required
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Blog Content</label>
+
+                <textarea
+                    id="blogContent"
+                    placeholder="Write your blog..."
+                    required
+                ></textarea>
+
+            </div>
+
+            <button type="submit" class="btn">
+                Publish Blog
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
